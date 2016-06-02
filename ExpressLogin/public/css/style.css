@@ -1,0 +1,27 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+nav ul {
+  background-color: #ffd600;
+}
+nav ul li{
+  padding: 15px 15px;
+  display: inline-block;
+}
+nav ul li:hover{
+  background-color: #FFF;
+}
+nav ul li a{
+  color: #000;
+}
+nav ul li a:hover{
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+}
+#login{
+  padding: 20px 20px;
+  width: 20%;
+  margin-left: 40%;
+}

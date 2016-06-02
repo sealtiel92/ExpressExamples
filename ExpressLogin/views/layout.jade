@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-theme.min.css')
+    script(type="text/javascript" href="/js/bootstrap.min.js")
+    script(type="text/javascript" href="/js/jquery.min.js")
+  body
+    nav
+      ul
+        li
+          a(href="/") Inicio
+        li
+          a(href="/users/profile") Profile
+        li
+        if(logged)
+          a(href="/users/logout") Logout
+        else
+          a(href="/login") Login
+    block content

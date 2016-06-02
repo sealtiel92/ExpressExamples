@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p= mgsError
+  div(class="panel panel-default" id="login")
+    form(action="/login" method="POST")
+      p
+          label Username
+      p
+          input(type="text" name="username" placerholder="Username" class="form-control")
+      p
+          label Password
+      p
+          input(type="password" name="password" placerholder="Password" class="form-control")
+      p
+          button(class="btn btn-primary") Iniciar
